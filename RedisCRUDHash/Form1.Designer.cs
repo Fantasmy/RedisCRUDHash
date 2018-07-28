@@ -36,12 +36,12 @@
             this.boxName = new System.Windows.Forms.TextBox();
             this.boxSurname = new System.Windows.Forms.TextBox();
             this.boxDni = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnPut = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.StudentGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.StudentGridView)).BeginInit();
             this.SuspendLayout();
@@ -110,59 +110,59 @@
             this.boxDni.Size = new System.Drawing.Size(198, 26);
             this.boxDni.TabIndex = 7;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(387, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(387, 39);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 32);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSave
             // 
-            this.button2.Location = new System.Drawing.Point(502, 76);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 32);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(502, 76);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 32);
+            this.btnSave.TabIndex = 9;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnPut
             // 
-            this.button3.Location = new System.Drawing.Point(387, 99);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 32);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPut.Location = new System.Drawing.Point(387, 99);
+            this.btnPut.Name = "btnPut";
+            this.btnPut.Size = new System.Drawing.Size(75, 32);
+            this.btnPut.TabIndex = 10;
+            this.btnPut.Text = "Update";
+            this.btnPut.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnCancel
             // 
-            this.button4.Location = new System.Drawing.Point(502, 130);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 32);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Cancel";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(502, 130);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 32);
+            this.btnCancel.TabIndex = 11;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnDel
             // 
-            this.button5.Location = new System.Drawing.Point(387, 162);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 32);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Delete";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnDel.Location = new System.Drawing.Point(387, 162);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(75, 32);
+            this.btnDel.TabIndex = 12;
+            this.btnDel.Text = "Delete";
+            this.btnDel.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnRefresh
             // 
-            this.button6.Location = new System.Drawing.Point(626, 82);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(118, 71);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Refresh";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnRefresh.Location = new System.Drawing.Point(626, 82);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(118, 71);
+            this.btnRefresh.TabIndex = 13;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // StudentGridView
             // 
@@ -179,12 +179,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.StudentGridView);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnPut);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.boxDni);
             this.Controls.Add(this.boxSurname);
             this.Controls.Add(this.boxName);
@@ -211,12 +211,12 @@
         private System.Windows.Forms.TextBox boxName;
         private System.Windows.Forms.TextBox boxSurname;
         private System.Windows.Forms.TextBox boxDni;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnPut;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridView StudentGridView;
     }
 }
